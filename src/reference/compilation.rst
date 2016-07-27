@@ -9,8 +9,8 @@ Compilation
 * Cython code, unlike Python, must be compiled.
 * This happens in two stages:
 
- * A ``.pyx`` file is compiles by Cython to a ``.c`` file.
- * The ``.c`` file is compiled by a C comiler to a ``.so`` file (or a ``.pyd`` file on Windows)
+ * A ``.pyx`` file is compiled by Cython to a ``.c`` file.
+ * The ``.c`` file is compiled by a C compiler to a ``.so`` file (or a ``.pyd`` file on Windows)
 
 * The following sub-sections describe several ways to build your extension modules.
 
@@ -63,7 +63,7 @@ Distutils
     )
 
 * Run the command ``python setup.py build_ext --inplace`` in your system's command shell.
-* Your done.. import your new extension module into your python shell or script as normal.
+* You're done! Import your new extension module into your python shell or script as normal.
 
 =====
 SCons
@@ -75,7 +75,7 @@ to be completed...
 Pyximport
 =========
 
-* For generating Cython code right in your pure python modulce::
+* For generating Cython code right in your pure python module::
 
     >>> import pyximport; pyximport.install()
     >>> import helloworld
@@ -95,7 +95,7 @@ Pyximport
 
 * The ``.py`` import mechanism is installed like this::
 
-    >>> pyximport.install(pyimport = True)
+    >>> pyximport.install(pyimport=True)
 
 
 .. note:: Authors
@@ -107,10 +107,10 @@ Sage
 ====
 
 The Sage notebook allows transparently editing and
-compiling Cython code simply by typing %cython at
-the top of a cell and evaluate it. Variables and func-
-tions deﬁned in a Cython cell imported into the run-
-ning session.
+compiling Cython code simply by typing `%cython` at
+the top of a cell and evaluate it. Variables and
+functions defined in a Cython cell imported into the
+running session.
 
 .. todo:: Provide a link to Sage docs
 
